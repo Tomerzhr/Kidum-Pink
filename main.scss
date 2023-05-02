@@ -1,0 +1,122 @@
+@use 'variable' as *;
+
+* {
+    font-family: $ff-Primary;
+}
+
+html,
+body,
+h1,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 50%;
+}
+
+
+body {
+    background-image: url(img/Bg.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.boxContact {
+    position: absolute;
+    top: 15%;
+    right: 10%;
+    width: 500px;
+    min-height: 550px;
+    background-color: $clr-Box;
+    color: $clr-Primary;
+
+    .content {
+        padding: 5rem 3rem;
+
+        h1 {
+            font-size: $fs-big;
+        }
+
+        p {
+            font-size: $fs-small;
+            font-weight: $fw-ExtraRegular400;
+        }
+    }
+
+}
+
+
+form {
+
+    label {
+        display: block;
+        font-size: $fs-ExtraSmall;
+        margin-top: 1rem;
+    }
+
+    input {
+        width: 100%;
+        border: none;
+        height: 50px;
+        border: 1px solid $clr-Title;
+
+        &:focus {
+            outline: none !important;
+        }
+    }
+
+    button {
+        display: block;
+        cursor: pointer;
+        background-color: $clr-Title;
+        border: none;
+        padding: 0.6rem 3rem;
+        margin-top: 2rem;
+        color: $clr-Primary;
+        font-size: $fs-small;
+        font-weight: $fw-SemiBold600;
+    }
+}
+
+
+@media (max-width:450px) {
+
+    body {
+        background-image: url(img/media.png);
+
+    }
+
+    .boxContact {
+        width: 80%;
+        height: 50%;
+        right: 10%;
+
+        .content {
+            padding: 3.5rem 3rem;
+        }
+
+        h1 {
+            font-size: $fs-medium;
+            text-align: center;
+        }
+
+        p {
+            font-size: $fs-ExtraSmall;
+            text-align: center;
+        }
+    }
+
+    form {
+        input {
+            height: 27px;
+        }
+
+        button {
+            padding: 0.3rem 1rem;
+            font-size: $fs-ExtraSmall;
+        }
+    }
+}
