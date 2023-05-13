@@ -34,15 +34,17 @@ body {
     color: $clr-Primary;
 
     .content {
-        padding: 5rem 3rem;
+        padding: 6rem 3rem;
 
         h1 {
             font-size: $fs-big;
+            font-weight: $fw-ExtraBold800;
         }
 
         p {
             font-size: $fs-small;
             font-weight: $fw-ExtraRegular400;
+            margin-bottom: 1rem;
         }
     }
 
@@ -51,20 +53,15 @@ body {
 
 form {
 
-    label {
-        display: block;
-        font-size: $fs-ExtraSmall;
-        margin-top: 1rem;
-    }
+    .mb-3 {
+        input {
+            border-radius: 0;
+            border: 1px solid $clr-Title;
 
-    input {
-        width: 100%;
-        border: none;
-        height: 50px;
-        border: 1px solid $clr-Title;
-
-        &:focus {
-            outline: none !important;
+            &:focus {
+                border: 1px solid $clr-Title;
+                box-shadow: none !important;
+            }
         }
     }
 
@@ -80,6 +77,9 @@ form {
         font-weight: $fw-SemiBold600;
     }
 }
+
+
+
 
 
 @media (max-width:450px) {
@@ -110,13 +110,18 @@ form {
     }
 
     form {
+        .form-label {
+            margin: 0;
+        }
+
         input {
-            height: 27px;
+            height: 100%;
         }
 
         button {
             padding: 0.3rem 1rem;
             font-size: $fs-ExtraSmall;
+            width: 100%;
         }
     }
 }
