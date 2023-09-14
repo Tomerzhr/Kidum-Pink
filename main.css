@@ -53,13 +53,13 @@ form .mb-3 input {
   border: 1px solid black;
 }
 form .mb-3 input:focus {
-  border: 1px solid #D31C75;
+  border: 1px solid #d31c75;
   box-shadow: none !important;
 }
 form button {
   display: block;
   cursor: pointer;
-  background-color: #D31C75;
+  background-color: #d31c75;
   border: none;
   padding: 0.6rem 3rem;
   margin-top: 2rem;
@@ -67,7 +67,9 @@ form button {
   font-size: 1rem;
   font-weight: 600;
 }
-
+button:disabled {
+  opacity: 0.5;
+}
 @media (max-width: 450px) {
   body {
     background-image: url(img/media.png);
@@ -99,4 +101,4 @@ form button {
     font-size: 1rem;
     width: 100%;
   }
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */
