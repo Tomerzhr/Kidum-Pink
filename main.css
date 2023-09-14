@@ -38,14 +38,19 @@ body {
   font-weight: 800;
 }
 .boxContact .content p {
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-weight: 200;
   margin-bottom: 1rem;
+}
+.boxContact .content .confirmation-message {
+  display: none;
+  padding-top: 10px;
+  margin: 0;
 }
 
 form .mb-3 input {
   border-radius: 0;
-  border: 1px solid #D31C75;
+  border: 1px solid black;
 }
 form .mb-3 input:focus {
   border: 1px solid #D31C75;
@@ -59,7 +64,7 @@ form button {
   padding: 0.6rem 3rem;
   margin-top: 2rem;
   color: white;
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-weight: 600;
 }
 
